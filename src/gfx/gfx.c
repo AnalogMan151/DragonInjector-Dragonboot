@@ -57,7 +57,7 @@ void gfx_swap_buffer(gfx_ctxt_t *ctxt)
     ctxt->fb = ctxt->next;
     ctxt->next = tmp;
     set_active_framebuffer(ctxt->fb);
-    gfx_clear_buffer(ctxt);
+    //gfx_clear_buffer(ctxt);
 }
 
 void gfx_clear_grey(gfx_ctxt_t *ctxt, u8 color)

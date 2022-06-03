@@ -6,10 +6,10 @@
 #include "storage/sdmmc.h"
 #include "storage/sdmmc_driver.h"
 
-sdmmc_t g_sd_sdmmc;
-sdmmc_storage_t g_sd_storage;
-FATFS g_sd_fs;
-bool g_sd_mounted;
+extern sdmmc_t g_sd_sdmmc;
+extern sdmmc_storage_t g_sd_storage;
+extern FATFS g_sd_fs;
+extern bool g_sd_mounted;
 
 bool sd_mount();
 void sd_unmount();

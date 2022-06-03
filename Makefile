@@ -46,7 +46,7 @@ LDFLAGS = $(ARCH) -nostartfiles -lgcc -Wl,--nmagic,--gc-sections
 
 .PHONY: all clean
 
-all: directories $(TARGET).lz4
+all: directories $(TARGET).lz4 $(TARGET).bin
 	@echo $(HFILES_BIN)
 
 directories:

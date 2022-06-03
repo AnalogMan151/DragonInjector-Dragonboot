@@ -66,8 +66,8 @@ typedef struct
     u32 pos_y;
 } bmp_data_t;
 
-gfx_ctxt_t g_gfx_ctxt;
-gfx_con_t g_gfx_con;
+extern gfx_ctxt_t g_gfx_ctxt;
+extern gfx_con_t g_gfx_con;
 
 #define EPRINTF(text) gfx_printf(&g_gfx_con, "%k"text"%k\n", 0xFFFF0000, 0xFFCCCCCC)
 #define EPRINTFARGS(text, args...) gfx_printf(&g_gfx_con, "%k"text"%k\n", 0xFFFF0000, args, 0xFFCCCCCC)
